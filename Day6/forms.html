@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Forms in HTML</h2>
+    <form action="jaha pe ye jayga data leker">
+        <div>
+            Name<input type="text" name="Myname" >
+        </div>
+        <br>jisme label hoga usme wo bs click karne se wo usi main select ho jayga <br>
+        <br>
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="Myname" id="name">
+        </div>
+        <div>
+            Email<input type="email" name="MyEmail">
+        </div>
+        <br>
+        <div>
+            BDATE <input type="date" name="Birthday">
+        </div>
+        <div>
+            My Bonus: <input type="number" name="MyBonus">
+        </div>
+        <div>
+            Are you Eligible? <input type="checkbox" name="Eligible">
+            <br>
+            Are you in love? <input type="checkbox" name="Eligible" checked>
+        </div>
+        <div>
+            Gender <br>
+            Male<input type="radio" name="Mygender">
+            FeMale<input type="radio" name="Mygender">
+            Other<input type="radio" name="Mygender">
+        </div>
+        <div>
+            <textarea name="Mytext" id="" cols="30" rows="10">Enter your prefered sex.....</textarea>
+        </div>
+
+        <div>
+            You should at least have these cars. Which of these do you have? :
+            
+            <label for="car">CAR</label>
+            <select name="YourCar" id="car">
+                <option value="Thar">Thar</option>
+                <option value="Lambo">Lambo</option>
+                <option value="GT">GT</option>
+                <option value="nano" selected>nano(default)</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        
+    </form>
+</body>
+</html>

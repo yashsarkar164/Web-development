@@ -1,0 +1,5 @@
+&lt;  for <
+&gt;  for >
+&amp; for &
+&nbsp; for a non-breaking space
+&copy; for ©

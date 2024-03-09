@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            color: peru;
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+        /* .box:nth-child(odd){
+            background-color: black;
+            color: whitesmoke;
+        } */
+        /* .box:nth-child(2){
+            color: purple;
+            background-color: blueviolet;
+        } */
+        /* .box:nth-last-child(2){
+            border: 2px solid black;
+            color: peru;
+        } */
+        .boxes::before{
+            content: "Jai Shree Ram";
+            color: White;
+            background-color: orangered;
+            font-size: 30px;
+        }
+        .boxes::after{
+            content: "Mangal bhawana ammangal hari ... Drawaha shree Dasarata Ajar behari.... Ram Siya Ram Siya Ram siya ram";
+            background-color: green;
+            color: white;
+            display: block;
+        }
+        ::selection{
+            background-color: magenta;
+            color: blue;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type yout name here">
+    </div>
+</body>
+</html>

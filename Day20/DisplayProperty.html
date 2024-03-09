@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: aqua;
+        }
+        .box{
+            border: 2px solid rgb(225, 6, 236);
+            /* display: inline; */
+            display: inline-block;
+            padding: 45px;
+            margin: 30px;
+            
+        }
+        .box1{
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a box
+        <!-- Now it will take full width so can we make it inline?   display: inline; 
+        and its consequences will lead to ... it will not make any margin and padding from top or it will never work on width height.
+        So to solve it we can use 
+        display: inline-block; -->
+    </div>
+    <div class="box">Also a good Box</div>
+    <span>I am a good</span>
+    <span>Boy</span>
+</body>
+</html>

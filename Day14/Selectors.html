@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .hero{
+            background-color: yellow;
+        }
+        /* ID selector */
+        #wajo{
+            background-color: purple;
+            color: whitesmoke;
+        }
+        /* Child Selector : div ke direct ander agar para ho tabhi lagu hoga*/
+        div > p {
+            background-color: rgb(156, 176, 43);
+            color: rgb(21, 213, 56);
+        }
+        /* Decendent Selector : div ke andar ke andar bhi agr para ho tab bhi lagu ho jayga jese ki I am a common man */
+        div p {
+            color: red;
+        }
+
+        /* Universal Selectors */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            /* after visiting the link will go green */
+            color: green;
+        }
+        a:link{
+            color: brown;
+        }
+        a:active{
+            /* Click the link -->turn red */
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>I am a div</div>
+
+
+    <div class="hero">
+        I am hero
+        <p>I am a villon</p>
+        <article>
+            <p>I am a common man</p>
+        </article>
+    </div>
+
+
+    <div id="wajo">Wajo wajo wajo wajo wajo</div>
+
+    <a target="_blank" href="https://www.Google.com">Go to Google</a>
+    <a target="_blank" href="https://www.Google2.com">Go to Google2</a> <br>
+    <a target="_blank" href="https://www.facebook.com">Go to facebook</a>
+
+
+</body>
+</html>

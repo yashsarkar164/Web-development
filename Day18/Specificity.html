@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        /* Specifiacity Calculation
+        Universal Selector: 0
+        Element selectors and pseudo-elements: 1
+        Class selectors, attribute selectors, and pseudo-classes: 10
+        ID selectors: 100
+        Inline styles: 1000 */
+        /* Specificity for this is 1 */
+        h1 {
+            color: maroon;
+        }
+
+        /* Specificity for this is 10 */
+        .alex {
+            color: aqua;
+        }
+
+        /* Specificity for this is 10 */
+        .eva {
+            color: blue;
+        }
+
+        /* Specificity for this is 10 */
+        .edan {
+            color: purple;
+        }
+
+        /* Specificity for this is 1 + 10 */
+        h1.alex {
+            color: brown;
+        }
+        /* Quiz: How much points in below  */
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+        /* ans: 1 + 10 + 10 + 10 + 10 = 41*/
+    </style>
+</head>
+
+<body>
+    <!-- https://www.codewithharry.com/tutorial/css-specificity/ -->
+    <h1 class="alex eva edan">Shawn Spell me what is things about Kuku</h1>
+    <!-- Specificity: Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+    <!-- Inline style -->
+    <p style="color: aqua;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, ipsam.</p>
+    <!-- You can overwrite selectors like universal selectors by element selectors and ....element selectors by Class or Attribute selector and soooooo on...
+    Now what if i need to Overwrite Inline style?
+    Then you can use !important
+     -->
+    <p style="color: rgb(26, 25, 22);" class="Shawn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+        eum eius corrupti iste quam numquam. Exercitationem itaque repellat enim, incidunt id assumenda sunt!</p>
+    <H1>Specificity Calculation (points)</H1>
+    <ul>
+        <li>Universal Selector: 0</li>
+        <li>Element selectors and pseudo-elements: 1</li>
+        <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+        <li>ID selectors: 100</li>
+        <li>Inline styles: 1000</li>
+        <li>!important: 10000</li>
+    </ul>
+</body>
+
+</html>

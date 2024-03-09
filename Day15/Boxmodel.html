@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOXmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 30px;
+            border: 7px solid blue;
+            height: 100px;
+            box-sizing: border-box;
+            /* box-sizing: border-box; means ki height jo ki 100px hai wo PADDING + BORDER + CONTENT milakr hain */
+        }
+        .box2{
+            color: rgb(102, 34, 192);
+            padding: 10px;
+            margin: 20px;
+            border: 7px solid rgb(0, 0, 0);
+            height: 100px;
+            box-sizing: border-box;
+        }
+        /* Here we use the concept of Margin Collapsing */
+    </style>
+</head>
+
+<body>
+    <!-- <img src="Screenshot 2024-01-27 123927.png" alt=" CSS BOXMODEL"> -->
+    <!-- <img src="Screenshot 2024-01-27 132123.png" alt="Inspect"> -->
+    <!-- <img src="MarginCollapsing.png" alt="MarginCollapsing"> -->
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am an another box</div>
+</body>
+
+</html>
