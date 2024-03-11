@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    transform: scale(0.8);
+}
+
+.icon img {
+    height: 2rem;
+    top: 1rem;
+    cursor: pointer;
+    scale: 1.5;
+}
+
+.right ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.right ul li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Segoe UI";
+}
+
+.translate {
+    height: 30px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75);
+    bottom: 50px;
+    position: relative;
+}
+.content{
+    height: 100%;
+    width: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(10,1fr);
+
+}
+.lang{
+    height: 10rem;
+    width: auto;
+    background-color: rgba(242, 248, 245, 0.632);
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI';
+}
+.download{
+    display: flex;
+    gap: 2rem;
+}
+.low{
+    padding: 1rem;
+    background-color:rgba(73, 107, 241, 0.638);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.high{
+    padding: 1rem;
+    background-color:rgb(117, 189, 9);
+    border-radius: 7px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+}
+@media(min-width:720px){
+    .content{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
