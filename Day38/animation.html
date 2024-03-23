@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+
+        .box {
+            width: 389px;
+            height: 89px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: Yash;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* ---------------------------> SPEED CURVE */
+            animation-timing-function: linear;
+            /* animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1); */
+            animation-direction: alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;             */
+            /* animation: 5s linear 1s infinite alternate none running Yash; */
+        }
+
+        @keyframes Yash {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 1100px;
+            }
+        }
+
+        #box2 {
+            width: 389px;
+            height: 89px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: Hsay;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes Hsay {
+            from {
+                top: 525px;
+                left: 1100px;
+            }
+
+            to {
+                top: 525px;
+                left: 0;
+            }
+        }
+
+        .circle {
+            position: relative;
+            top: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3 {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: yellowgreen;
+            border-radius: 100px;
+            position: relative;
+            animation-name: yeah;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes yeah {
+            0%{
+              
+            }
+
+            30% {
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            60% {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            100% {
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div id="box2">
+
+        </div>
+        <div class="circle">
+            <div class="box3">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-cover</title>
+    <style>
+        *{
+            background-color: rgba(0, 255, 255, 0.412);
+        }
+        .container{
+            width: 900px;
+            height: 694px;
+            background-color: azure;
+            border: 2px solid black;
+            /* background-image: url(Screenshot\ \(1740\).png);
+            background-position: center center; */
+        }
+        img{
+            width: 900px;
+            height: 694px;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-position: center; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            object-position: -200px -3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Screenshot (1740).png" alt="">
+    </div>
+</body>
+</html>
